@@ -21,7 +21,7 @@ void ent(int ent)
     }
 }
 
-char chscan(char vet[], int tam)
+char StrScan(char vet[], int tam)
 {
     ZeroMemory(vet, tam);
     i = 0;
