@@ -16,9 +16,9 @@ Este repositório faz parte do projeto Bibliotecas, esta é a parte C do mesmo
   
   
 ## Declaração de variáveis globais:
-  i, dec, ii, xi: Variáveis inteiras utilizadas em várias partes do código.
-  xf, xfdec: Variáveis de ponto flutuante (float) utilizadas em várias partes do código.
-  a, b: Arrays de caracteres utilizados para armazenar valores de entrada.
+  - i, dec, ii, xi: Variáveis inteiras utilizadas em várias partes do código.
+  - xf, xfdec: Variáveis de ponto flutuante (float) utilizadas em várias partes do código.
+  - a, b: Arrays de caracteres utilizados para armazenar valores de entrada.
 
 
 ## Função `cls`:
