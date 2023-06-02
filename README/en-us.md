@@ -1,4 +1,6 @@
 # C-Library
+*This reade me is only to **MAIN** branch*
+
 This repository is part of the Libraries project, and this is the C part of it.
 
 Included libraries:
