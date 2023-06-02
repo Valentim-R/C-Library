@@ -20,11 +20,11 @@ Este repositório faz parte do projeto Bibliotecas, esta é a parte C do mesmo
 
 
 ## Função `cls`:
-  Essa função é apenas uma abreviação para: `system("cls");`
+  - Essa função é apenas uma abreviação para: `system("cls");`
 
 
 ## Função `ent`:
-  Faz quebras de linha de acordo com o numero recebido por parametro.
+  - Faz quebras de linha de acordo com o numero recebido por parametro.
 
 
 ## Função `StrScan`:
