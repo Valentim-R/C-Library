@@ -4,12 +4,6 @@
 #include <ctype.h>
 #include <conio.h>
 
-int i, dec, ii, xi;
-float xf, xfdec;
-char a[500];
-char A;
-char b[500];
-
 void cls()
 {
     system("cls");
@@ -17,16 +11,18 @@ void cls()
 
 void ent(int ent)
 {
-    for (i = 0; i <= ent; i++)
+    for (int i = 0; i < ent; i++)
     {
         printf("\n");
     }
 }
 
-char StrScan(char vet[], int tam)
+void StrScan(char vet[], int tam)
 {
+    int i = 0;
+    char A;
     ZeroMemory(vet, tam);
-    i = 0;
+
     do
     {
         A = getch();
@@ -45,14 +41,24 @@ char StrScan(char vet[], int tam)
     } while (A != 13);
 }
 
-float NumDecScan()
+float NumDecScan(int tam)
 {
-    ZeroMemory(a, 500);
-    i = 0;
+    if (tam == 0)
+    {
+        tam = 100;
+    }
+
+    char a[tam];
+    char A;
+    int i = 0;
+    float x = 0;
+    ZeroMemory(a, tam);
+
     do
     {
         A = getch();
-        if (isdigit(A) != 0 || A == '-' || A == '.')
+
+        if ((isdigit(A) != 0 || A == '-' || A == '.') && tam > i)
         {
             a[i] = A;
             printf("%c", a[i]);
@@ -65,18 +71,27 @@ float NumDecScan()
             a[i] = NULL;
         }
     } while (A != 13);
-    xf = atof(a);
-    return xf;
+    x = atof(a);
+    return x;
 }
 
-float NumDecScanNn()
+float NumDecScanNn(int tam)
 {
+    if (tam == 0)
+    {
+        tam = 100;
+    }
+
+    char a[tam];
+    char A;
+    int i = 0;
+    float x = 0;
     ZeroMemory(a, 500);
-    i = 0;
+
     do
     {
         A = getch();
-        if (isdigit(A) != 0 || A == '.')
+        if ((isdigit(A) != 0 || A == '.') && tam > i)
         {
             a[i] = A;
             printf("%c", a[i]);
@@ -89,18 +104,27 @@ float NumDecScanNn()
             a[i] = NULL;
         }
     } while (A != 13);
-    xf = atof(a);
-    return xf;
+    x = atof(a);
+    return x;
 }
 
-int NumIntScan()
+int NumIntScan(int tam)
 {
+    if (tam == 0)
+    {
+        tam = 100;
+    }
+
+    int i = 0;
+    char a[tam];
+    char A;
+    int x = 0;
     ZeroMemory(a, 500);
-    i = 0;
+
     do
     {
         A = getch();
-        if (isdigit(A) != 0 || A == '-')
+        if ((isdigit(A) != 0 || A == '-') && tam > i)
         {
             a[i] = A;
             printf("%c", a[i]);
@@ -113,18 +137,27 @@ int NumIntScan()
             a[i] = NULL;
         }
     } while (A != 13);
-    xi = atoi(a);
-    return xi;
+    x = atoi(a);
+    return x;
 }
 
-int NumIntScanNn()
+int NumIntScanNn(int tam)
 {
+    if (tam == 0)
+    {
+        tam = 100;
+    }
+
+    int i = 0;
+    char a[tam];
+    char A;
+    int x = 0;
     ZeroMemory(a, 500);
-    i = 0;
+
     do
     {
         A = getch();
-        if (isdigit(A) != 0)
+        if ((isdigit(A) != 0) && tam > i)
         {
             a[i] = A;
             printf("%c", a[i]);
@@ -137,6 +170,6 @@ int NumIntScanNn()
             a[i] = NULL;
         }
     } while (A != 13);
-    xi = atoi(a);
-    return xi;
+    x = atoi(a);
+    return x;
 }
