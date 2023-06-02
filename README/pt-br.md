@@ -1,27 +1,35 @@
 # C-Library
+
+*Este leia-me é apenas para o ramo **PRINCIPAL***
+
 Este repositório faz parte do projeto Bibliotecas, esta é a parte C do mesmo
 
-Bibliotecas inclusas:
-  windows.h: Fornece a funcionalidade necessária para interagir com o sistema operacional Windows.
-  stdio.h: Fornece as funções básicas de entrada e saída, como printf e getch.
-  stdlib.h: Fornece funções utilitárias, como system, atoi e atof.
+## Bibliotecas inclusas:
+  ### windows.h:
+  Fornece a funcionalidade necessária para interagir com o sistema operacional Windows.
+  
+  ### stdio.h:
+  Fornece as funções básicas de entrada e saída, como printf e getch.
+  
+  ### stdlib.h: 
+  Fornece funções utilitárias, como system, atoi e atof.
   
   
-Declaração de variáveis globais:
+## Declaração de variáveis globais:
   i, dec, ii, xi: Variáveis inteiras utilizadas em várias partes do código.
   xf, xfdec: Variáveis de ponto flutuante (float) utilizadas em várias partes do código.
   a, b: Arrays de caracteres utilizados para armazenar valores de entrada.
 
 
-Função cls:
+## Função cls:
   Essa função chama o comando system("cls") para limpar a tela do console.
 
 
-Função ent:
+## Função ent:
   Recebe um inteiro ent como parâmetro e imprime várias quebras de linha no console com base no valor de ent.
 
 
-Função StrScan:
+## Função StrScan:
   Recebe um array de caracteres vet e um inteiro tam como parâmetros.
   Utiliza ZeroMemory para limpar o array vet.
   Inicia um loop do-while para ler caracteres do console até que a tecla "Enter" seja pressionada.
@@ -32,19 +40,19 @@ Função StrScan:
   Ao final da função, o array vet contém a entrada digitada pelo usuário.
 
 
-Função NumDecScan:
+## Função NumDecScan:
   Essa função é semelhante à função chscan, mas é específica para a leitura de números decimais (float).
   Utiliza um array a para armazenar os caracteres digitados.
   Lê os caracteres do console, permitindo apenas dígitos, o caractere de ponto decimal e o caractere de sinal negativo.
   A função converte o array a em um número decimal usando atof e retorna o valor convertido.
 
 
-Função NumDecScanNn:
+## Função NumDecScanNn:
   Essa função é semelhante à função NumDecScan, mas não permite números negativos.
   Apenas dígitos e o caractere de ponto decimal são permitidos.
 
 
-Função NumIntScan:
+## Função NumIntScan:
   Essa função é semelhante às funções anteriores, mas é específica para a leitura de números inteiros.
   Permite apenas dígitos e o caractere de sinal negativo
   Utiliza um array a para armazenar os caracteres digitados.
@@ -52,7 +60,7 @@ Função NumIntScan:
   A função converte o array a em um número inteiro usando atoi e retorna o valor convertido.
 
 
-Função NumIntScanNn:
+## Função NumIntScanNn:
   Essa função é semelhante à função NumIntScan, mas não permite números negativos.
   Apenas dígitos são permitidos.
   
