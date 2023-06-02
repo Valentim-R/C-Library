@@ -1,141 +1,55 @@
-# C-Library
+# Português
+## Descrição do Código
+
+Este código em C é um exemplo de um programa que contém funções para ler diferentes tipos de dados da entrada do usuário. Ele utiliza algumas bibliotecas padrão do C, como `stdio.h`, `stdlib.h`, `ctype.h` e `conio.h`, além da biblioteca `windows.h`, que é específica para o sistema operacional Windows.
+
+As principais funções do código são responsáveis por ler e armazenar strings, números inteiros e números decimais da entrada do usuário. Aqui está uma descrição detalhada de cada uma dessas funções:
+
+- `void cls()`: Essa função não recebe parâmetros. Ela utiliza o comando `system("cls")` para limpar a tela do console. Isso garante que a saída seja exibida em uma tela limpa.
+
+- `void ent(int ent)`: Essa função recebe um parâmetro `ent` do tipo `int`, que representa a quantidade de linhas em branco que devem ser inseridas na saída.
+
+- `char StrScan(char vet[], int tam)`: Essa função recebe dois parâmetros: `vet`, que é um vetor de caracteres onde a string lida será armazenada, e `tam`, que representa o tamanho máximo da string. A função lê uma string da entrada do usuário e a armazena no vetor `vet`. Ela utiliza a função `getch()` para ler cada caractere digitado pelo usuário. O loop continua até que o usuário pressione a tecla Enter (`\n`). Durante a leitura, a função também permite que o usuário apague caracteres digitados errados pressionando a tecla Backspace (`\b`).
+
+- `float NumDecScan()`: Essa função não recebe parâmetros. Ela lê um número decimal da entrada do usuário e o retorna como um valor de ponto flutuante (`float`). Assim como a função `StrScan()`, ela utiliza a função `getch()` para ler cada caractere digitado pelo usuário. A função também permite que o usuário apague caracteres digitados errados pressionando a tecla Backspace (`\b`). O número decimal lido é convertido para um valor de ponto flutuante usando a função `atof()` da biblioteca `stdlib.h`.
+
+- `float NumDecScanNn()`: Essa função não recebe parâmetros. Ela é semelhante à função `NumDecScan()`, mas não permite números negativos. Ou seja, ela só permite a entrada de números decimais positivos.
+
+- `int NumIntScan()`: Essa função não recebe parâmetros. Ela lê um número inteiro da entrada do usuário e o retorna como um valor inteiro (`int`). Ela utiliza a função `getch()` para ler cada caractere digitado pelo usuário. A função também permite que o usuário apague caracteres digitados errados pressionando a tecla Backspace (`\b`). O número inteiro lido é convertido para um valor inteiro usando a função `atoi()` da biblioteca `stdlib.h`.
+
+- `int NumIntScanNn()`: Essa função não recebe parâmetros. Ela é semelhante à função `NumIntScan()`, mas não permite números negativos. Ou seja, ela só permite a entrada de números inteiros positivos.
+
+## Como usar
+
+1. Compile o código em um compilador C compatível.
+2. Execute o programa resultante.
+3. Siga as instruções exibidas na tela para inserir os dados desejados.
+
 
 # English
 
-*This readme is only for the **MAIN** branch.*
+## Code Description
 
-This repository is part of the Libraries project, and this is its C part.
+This C code is an example of a program that contains functions to read different types of data from user input. It utilizes several standard C libraries such as `stdio.h`, `stdlib.h`, `ctype.h`, and `conio.h`, along with the `windows.h` library, which is specific to the Windows operating system.
 
-## Included Libraries:
-  ### windows.h:
-    Provides the necessary functionality to interact with the Windows operating system.
-  ### stdio.h:
-    Provides basic input and output functions, such as printf and getch.
-  ### stdlib.h:
-    Provides utility functions, such as system, atoi, and atof.
-  
-  
-## Global Variable Declarations:
-  - i, dec, ii, xi: Integer variables used in various parts of the code.
-  - xf, xfdec: Floating-point variables (float) used in various parts of the code.
-  - a, b: Character arrays used to store input values.
+The main functions in the code are responsible for reading and storing strings, integers, and floating-point numbers from user input. Here is a detailed description of each of these functions:
 
+- `void cls()`: This function takes no parameters. It uses the `system("cls")` command to clear the console screen. This ensures that the output is displayed on a clean screen.
 
-## `cls` Function:
-  - This function is just an abbreviation for: `system("cls");`
+- `void ent(int ent)`: This function takes an `ent` parameter of type `int`, which represents the number of blank lines to be inserted in the output.
 
+- `char StrScan(char vet[], int tam)`: This function takes two parameters: `vet`, which is a character array where the read string will be stored, and `tam`, which represents the maximum size of the string. The function reads a string from user input and stores it in the `vet` array. It uses the `getch()` function to read each character entered by the user. The loop continues until the user presses the Enter key (`\n`). During the input, the function also allows the user to delete wrongly typed characters by pressing the Backspace key (`\b`).
 
-## `ent` Function:
-  - Inserts line breaks according to the received parameter.
+- `float NumDecScan()`: This function takes no parameters. It reads a decimal number from user input and returns it as a floating-point value (`float`). Similar to the `StrScan()` function, it uses the `getch()` function to read each character entered by the user. The function also allows the user to delete wrongly typed characters by pressing the Backspace key (`\b`). The read decimal number is converted to a floating-point value using the `atof()` function from the `stdlib.h` library.
 
+- `float NumDecScanNn()`: This function takes no parameters. It is similar to the `NumDecScan()` function but does not allow negative numbers. In other words, it only allows the input of positive decimal numbers.
 
-## `StrScan` Function:
-  - Receives a character array vet and an integer tam as parameters.
-  - Uses ZeroMemory to clear the vet array.
-  - Starts a do-while loop to read characters from the console until the "Enter" key is pressed.
-  - Inside the loop, reads a character from input using getch.
-  - If the character is a whitespace, digit, or letter, and the size of the vet array has not been exceeded, the character is
-  stored in vet and printed to the console.
-  - If the character is the "Backspace" key and the size of the vet array is greater than zero, the last character is removed
-  from the array, and the console position is updated to reflect this removal.
-  - The loop continues until the "Enter" key is pressed.
-  - At the end of the function, the vet array contains the user's input.
+- `int NumIntScan()`: This function takes no parameters. It reads an integer number from user input and returns it as an integer value (`int`). It uses the `getch()` function to read each character entered by the user. The function also allows the user to delete wrongly typed characters by pressing the Backspace key (`\b`). The read integer number is converted to an integer value using the `atoi()` function from the `stdlib.h` library.
 
+- `int NumIntScanNn()`: This function takes no parameters. It is similar to the `NumIntScan()` function but does not allow negative numbers. In other words, it only allows the input of positive integer numbers.
 
-## `NumDecScan` Function:
-  - This function is similar to the `StrScan` function but is specific for reading decimal numbers (float).
-  - Uses an array `a` to store the entered characters.
-  - Reads characters from the console, allowing only digits, the decimal point character, and the negative sign character.
-  - The function converts the `a` array into a decimal number using atof and returns the converted value.
+## How to Use
 
-
-## `NumDecScanNn` Function:
-  - This function is similar to the `NumDecScan` function but does not allow negative numbers.
-  - Only digits and the decimal point character are allowed.
-
-
-## `NumIntScan` Function:
-  - This function is similar to the previous functions but is specific for reading integer numbers.
-  - Only digits and the negative sign character are allowed.
-  - Uses an array `a` to store the entered characters.
-  - Reads characters from the console, allowing only digits and the negative sign character.
-  - The function converts the `a` array into an integer number using atoi and returns the converted value.
-
-
-## `NumIntScanNn` Function:
-  - This function is similar to the `NumIntScan` function but does not allow negative numbers.
-  - Only digits are allowed.
-  
-  
-In general, these functions are designed to handle data input in the console. They allow reading different types of 
-values (integer numbers, decimal numbers) and also include the functionality to allow only certain input characters,
-such as digits, letters, and whitespaces. Additionally, there is a cls function to clear the console screen and an ent
-function to print line breaks.
-
-# Portugues
-
-
-*Este leia-me é apenas para o ramo **PRINCIPAL***
-
-Este repositório faz parte do projeto Bibliotecas, esta é a parte C do mesmo
-
-## Bibliotecas inclusas:
-  ### windows.h:
-    Fornece a funcionalidade necessária para interagir com o sistema operacional Windows.
-  ### stdio.h:
-    Fornece as funções básicas de entrada e saída, como printf e getch.
-  ### stdlib.h: 
-    Fornece funções utilitárias, como system, atoi e atof.
-  
-  
-## Declaração de variáveis globais:
-  - i, dec, ii, xi: Variáveis inteiras utilizadas em várias partes do código.
-  - xf, xfdec: Variáveis de ponto flutuante (float) utilizadas em várias partes do código.
-  - a, b: Arrays de caracteres utilizados para armazenar valores de entrada.
-
-
-## Função `cls`:
-  - Essa função é apenas uma abreviação para: `system("cls");`
-
-
-## Função `ent`:
-  - Faz quebras de linha de acordo com o numero recebido por parametro.
-
-
-## Função `StrScan`:
-  - Recebe um array de caracteres vet e um inteiro tam como parâmetros.
-  - Utiliza ZeroMemory para limpar o array vet.
-  - Inicia um loop do-while para ler caracteres do console até que a tecla "Enter" seja pressionada.
-  - Dentro do loop, lê um caractere da entrada utilizando getch.
-  - Se o caractere for um espaço em branco, um dígito ou uma letra, e o tamanho do array vet não tiver sido excedido, o caractere é       armazenado em vet e impresso no console.
-  - Se o caractere for o "Backspace" (tecla de apagar) e o tamanho do array vet for maior que zero, o último caractere é removido do array e a posição no console é atualizada para refletir essa remoção.
-  - O loop continua até que a tecla "Enter" seja pressionada.
-  - Ao final da função, o array vet contém a entrada digitada pelo usuário.
-
-
-## Função `NumDecScan`:
-  - Essa função é semelhante à função `StrScan`, mas é específica para a leitura de números decimais (float).
-  - Utiliza um array `a` para armazenar os caracteres digitados.
-  - Lê os caracteres do console, permitindo apenas dígitos, o caractere de ponto decimal e o caractere de sinal negativo.
-  - A função converte o array `a` em um número decimal usando atof e retorna o valor convertido.
-
-
-## Função `NumDecScanNn`:
-  - Essa função é semelhante à função `NumDecScan`, mas não permite números negativos.
-  - Apenas dígitos e o caractere de ponto decimal são permitidos.
-
-
-## Função `NumIntScan`:
-  - Essa função é semelhante às funções anteriores, mas é específica para a leitura de números inteiros.
-  - Permite apenas dígitos e o caractere de sinal negativo
-  - Utiliza um array `a` para armazenar os caracteres digitados.
-  - Lê os caracteres do console, permitindo apenas dígitos e o caractere de sinal negativo.
-  - A função converte o array `a` em um número inteiro usando atoi e retorna o valor convertido.
-
-
-## Função `NumIntScanNn`:
-  - Essa função é semelhante à função NumIntScan, mas não permite números negativos.
-  - Apenas dígitos são permitidos.
-  
-  
- No geral, essas funções são projetadas para lidar com a entrada de dados no console. Elas permitem a leitura de diferentes tipos de valores (números inteiros, números decimais) e também incluem a funcionalidade de permitir apenas determinados caracteres de entrada, como dígitos, letras e espaços em branco. Além disso, há uma função cls para limpar a tela do console e uma função ent para imprimir quebras de linha
+1. Compile the code using a compatible C compiler.
+2. Run the resulting program.
+3. Follow the instructions displayed on the screen to enter the desired data.
