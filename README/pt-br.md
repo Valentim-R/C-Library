@@ -6,11 +6,11 @@ Este repositório faz parte do projeto Bibliotecas, esta é a parte C do mesmo
 
 ## Bibliotecas inclusas:
   ### windows.h:
-  Fornece a funcionalidade necessária para interagir com o sistema operacional Windows.
+    Fornece a funcionalidade necessária para interagir com o sistema operacional Windows.
   ### stdio.h:
-  Fornece as funções básicas de entrada e saída, como printf e getch.
+    Fornece as funções básicas de entrada e saída, como printf e getch.
   ### stdlib.h: 
-  Fornece funções utilitárias, como system, atoi e atof.
+    Fornece funções utilitárias, como system, atoi e atof.
   
   
 ## Declaração de variáveis globais:
