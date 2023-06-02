@@ -1,5 +1,5 @@
 # C-Library
-This repository is part of Libraries project, this is the C part of this
+Este repositório faz parte do projeto Bibliotecas, esta é a parte C do mesmo
 
 Bibliotecas inclusas:
   windows.h: Fornece a funcionalidade necessária para interagir com o sistema operacional Windows.
