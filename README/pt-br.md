@@ -7,10 +7,8 @@ Este repositório faz parte do projeto Bibliotecas, esta é a parte C do mesmo
 ## Bibliotecas inclusas:
   ### windows.h:
   Fornece a funcionalidade necessária para interagir com o sistema operacional Windows.
-  
   ### stdio.h:
   Fornece as funções básicas de entrada e saída, como printf e getch.
-  
   ### stdlib.h: 
   Fornece funções utilitárias, como system, atoi e atof.
   
@@ -22,11 +20,11 @@ Este repositório faz parte do projeto Bibliotecas, esta é a parte C do mesmo
 
 
 ## Função `cls`:
-  Essa função chama o comando system("cls") para limpar a tela do console.
+  Essa função é apenas uma abreviação para: `system("cls");`
 
 
 ## Função `ent`:
-  Recebe um inteiro ent como parâmetro e imprime várias quebras de linha no console com base no valor de ent.
+  Faz quebras de linha de acordo com o numero recebido por parametro.
 
 
 ## Função `StrScan`:
@@ -41,23 +39,23 @@ Este repositório faz parte do projeto Bibliotecas, esta é a parte C do mesmo
 
 
 ## Função `NumDecScan`:
-  Essa função é semelhante à função chscan, mas é específica para a leitura de números decimais (float).
-  Utiliza um array a para armazenar os caracteres digitados.
+  Essa função é semelhante à função `StrScan`, mas é específica para a leitura de números decimais (float).
+  Utiliza um array `a` para armazenar os caracteres digitados.
   Lê os caracteres do console, permitindo apenas dígitos, o caractere de ponto decimal e o caractere de sinal negativo.
-  A função converte o array a em um número decimal usando atof e retorna o valor convertido.
+  A função converte o array `a` em um número decimal usando atof e retorna o valor convertido.
 
 
 ## Função `NumDecScanNn`:
-  Essa função é semelhante à função NumDecScan, mas não permite números negativos.
+  Essa função é semelhante à função `NumDecScan`, mas não permite números negativos.
   Apenas dígitos e o caractere de ponto decimal são permitidos.
 
 
 ## Função `NumIntScan`:
   Essa função é semelhante às funções anteriores, mas é específica para a leitura de números inteiros.
   Permite apenas dígitos e o caractere de sinal negativo
-  Utiliza um array a para armazenar os caracteres digitados.
+  Utiliza um array `a` para armazenar os caracteres digitados.
   Lê os caracteres do console, permitindo apenas dígitos e o caractere de sinal negativo.
-  A função converte o array a em um número inteiro usando atoi e retorna o valor convertido.
+  A função converte o array `a` em um número inteiro usando atoi e retorna o valor convertido.
 
 
 ## Função `NumIntScanNn`:
