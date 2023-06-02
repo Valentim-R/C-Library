@@ -1,6 +1,6 @@
-# English
-
 # C-Library
+
+# English
 
 *This readme is only for the **MAIN** branch.*
 
@@ -72,9 +72,8 @@ values (integer numbers, decimal numbers) and also include the functionality to 
 such as digits, letters, and whitespaces. Additionally, there is a cls function to clear the console screen and an ent
 function to print line breaks.
 
-#Portugues
+# Portugues
 
-# C-Library
 
 *Este leia-me é apenas para o ramo **PRINCIPAL***
 
