@@ -1,6 +1,8 @@
 #include <windows.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
+#include <conio.h>
 
 int i, dec, ii, xi;
 float xf, xfdec;
