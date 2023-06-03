@@ -86,7 +86,7 @@ float NumDecScanNn(int tam)
     char A;
     int i = 0;
     float x = 0;
-    ZeroMemory(a, 500);
+    ZeroMemory(a, tam);
 
     do
     {
@@ -119,7 +119,7 @@ int NumIntScan(int tam)
     char a[tam];
     char A;
     int x = 0;
-    ZeroMemory(a, 500);
+    ZeroMemory(a, tam);
 
     do
     {
@@ -152,7 +152,7 @@ int NumIntScanNn(int tam)
     char a[tam];
     char A;
     int x = 0;
-    ZeroMemory(a, 500);
+    ZeroMemory(a, tam);
 
     do
     {
